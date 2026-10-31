@@ -25,6 +25,7 @@ class Bridge:
             STATE.write_text(json.dumps(data,indent=2),encoding='utf-8')
             expression='window.guiPlaygroundSync('+json.dumps(json.dumps(data))+')'
             for win in list(webview.windows):
+                if win.title == 'GUI Playground — Config Editor': continue
                 try: win.evaluate_js(expression)
                 except Exception: pass
         return True

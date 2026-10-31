@@ -1,7 +1,0 @@
-- [completed] Add native pywebview editor and separate preview windows (launch.py); Windows runtime test pending.
-- [completed] Remove in-editor preview and browser pop-out launching (index.html).
-- [completed] Organize experiments into separate directories and move Immergold chat renderer.
-- [completed] Add Python-backed cross-window configuration persistence and synchronization; Windows runtime test pending.
-- [in progress] [planned] Verify native Windows launch and synchronization; pending local runtime test.
-- [future] Automatic experiment discovery and independently implemented starter renderers.
-- [future] Native window transparency, always-on-top, and blur settings.
