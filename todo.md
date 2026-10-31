@@ -6,3 +6,7 @@
 
 - [completed] Fix native preview routing by using file URL fragments rather than query strings in launch.py and index.html; static regression added.
 - [in progress] [planned] Confirm Immergold and generic chat previews open correctly in Windows pywebview; native test pending.
+
+- [completed] Debounce configuration persistence and preview broadcasts by 500 ms after the last change; keep sliders responsive during editing (index.html); JavaScript syntax checked, native verification pending.
+- [completed] Flush pending edits before launching a preview window and prevent incoming sync from interrupting active edits (index.html).
+- [in progress] [planned] Validate slider drag and cross-window update timing on Windows; runtime verification pending.

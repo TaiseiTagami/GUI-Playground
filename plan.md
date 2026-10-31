@@ -1,7 +1,6 @@
 # Current objective
 
-Verify the native experiment preview file-path fix on Windows. Both Immergold and generic chat must launch independently and continue receiving configuration changes.
+Verify 500 ms trailing debounce for GUI configuration changes and native window synchronization.
 
 ## Remaining
-- Run static regression: .venv\\Scripts\\python.exe -m unittest discover -s tests
-- Perform Windows GUI smoke test after pulling main.
+- Run unit tests and test slider dragging, native preview update after 0.5 seconds idle, and opening a window with pending edits on Windows.
