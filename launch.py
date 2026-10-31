@@ -44,7 +44,7 @@ class Bridge:
             if item is None: raise ValueError('Unknown instance')
             webview.create_window(
                 title=str(item.get('name','GUI experiment'))+' — Preview',
-                url=(ROOT/'index.html').as_uri()+'?window='+instance_id,
+                url=(ROOT/'index.html').as_uri()+'#window='+instance_id,
                 js_api=self,width=860,height=650,min_size=(400,300))
         return True
 
