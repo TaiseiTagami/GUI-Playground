@@ -2,7 +2,12 @@
 import json
 import threading
 from pathlib import Path
-import webview
+try:
+    import webview
+except ModuleNotFoundError as exc:
+    if exc.name == 'webview':
+        raise SystemExit('pywebview is missing. Run start.bat to create/use the project-local .venv.') from exc
+    raise
 
 ROOT=Path(__file__).resolve().parent
 STATE=ROOT/'.playground-state.json'

@@ -1,0 +1,5 @@
+{
+  "id": "immergold-chat",
+  "name": "Immergold chat",
+  "entry": "renderer.js"
+}
