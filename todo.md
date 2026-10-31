@@ -1,5 +1,7 @@
-- [completed] Create initial configuration editor and GUI instance launcher (index.html).
-- [completed] Repair JavaScript parse failure causing blank black page; syntax checked via V8 parser, browser smoke test pending.
-- [in progress] Native browser smoke test of launch, live configuration, and pop-out syncing (requires Windows/browser runtime).
-- [future] Add Tauri desktop window support for true native transparency and always-on-top behavior.
-- [completed] Add Immergold chat mock based on current NiceGUI main.py, panel.py, and imc.css; configurable sidebar, header, composer, process steps, stats, voice, and palette. Syntax checked; browser testing pending.
+- [completed] Add native pywebview editor and separate preview windows (launch.py); Windows runtime test pending.
+- [completed] Remove in-editor preview and browser pop-out launching (index.html).
+- [completed] Organize experiments into separate directories and move Immergold chat renderer.
+- [completed] Add Python-backed cross-window configuration persistence and synchronization; Windows runtime test pending.
+- [in progress] [planned] Verify native Windows launch and synchronization; pending local runtime test.
+- [future] Automatic experiment discovery and independently implemented starter renderers.
+- [future] Native window transparency, always-on-top, and blur settings.

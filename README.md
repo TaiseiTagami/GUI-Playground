@@ -1,15 +1,21 @@
 # GUI Playground
 
-A configuration editor and launcher for independent GUI experiments. Open `index.html` through `python -m http.server 5173` and visit `http://localhost:5173`.
+A native desktop configuration editor and launcher for visual GUI experiments.
 
-Select a GUI instance, edit its configuration with sliders and color pickers, and use Pop out to open it in a separate browser window. Each instance retains its own configuration. Changes sync across open windows. Export and import JSON presets.
+## Run on Windows
 
-This is currently browser-window based, not native Windows/Tauri. Pop-ups may require browser permission. Native always-on-top and transparent desktop windows are future work.
+```powershell
+git pull origin main
+python -m pip install -r requirements.txt
+python launch.py
+```
 
-## Immergold chat template
+Do not start an HTTP server. The editor opens as a desktop window. Select an instance, edit its properties, and click **Launch window** to open a completely separate native preview window. Duplicate an instance to test a different configuration. Multiple previews of the same instance are supported.
 
-Choose **New window**, enter **Immergold chat**, and edit its properties in the inspector. The mock references the current Immergold NiceGUI layout: compact amber header with chat/config/Debug tabs, gateway status, main-chat/wakewords toggles, left chat sidebar, terminal-style transcript with process steps and token statistics, microphone/send composer, and bottom status bar.
+Configurations persist to `.playground-state.json` (Git-ignored), synchronize through the Python bridge, and can be exported/imported as JSON.
 
-The editor includes Immergold-specific sliders for sidebar width, header height, message spacing and composer height; visibility toggles; and palette controls. Duplicate the instance to compare different designs, or pop it out into a separate browser window. All chat content is mock data and does not connect to Hermes.
+## Experiments
 
-Sources used for visual and layout reference: `TaiseiTagami/immergold/immergold-voice/voice_app/main.py`, `panel.py`, and `static/imc.css` on `main` (2026-10-31).
+Each experiment has a dedicated folder in `experiments/`. The Immergold chat experiment has its own `renderer.js`, referencing the current Immergold NiceGUI appearance. Three starter experiments have separate manifest folders but currently share legacy renderer code in `index.html`. Automatic folder discovery is not implemented yet.
+
+This is a visual design environment only. It does not connect to Hermes, and native transparency/always-on-top controls are future work. Browser pop-ups and in-editor previews are intentionally disabled.
