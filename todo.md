@@ -2,3 +2,4 @@
 - [completed] Repair JavaScript parse failure causing blank black page; syntax checked via V8 parser, browser smoke test pending.
 - [in progress] Native browser smoke test of launch, live configuration, and pop-out syncing (requires Windows/browser runtime).
 - [future] Add Tauri desktop window support for true native transparency and always-on-top behavior.
+- [completed] Add Immergold chat mock based on current NiceGUI main.py, panel.py, and imc.css; configurable sidebar, header, composer, process steps, stats, voice, and palette. Syntax checked; browser testing pending.
