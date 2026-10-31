@@ -1,6 +1,4 @@
-- [completed] Initialize standalone GUI Playground without Immergold/Hermes dependencies — index.html and README.md; static implementation committed, runtime browser testing pending.
-- [completed] Add multiple independent GUI instances and pop-out browser windows — index.html; runtime browser testing pending.
-- [completed] Add configuration inspector with sliders, color pickers, border/line examples, and live preview — index.html; runtime browser testing pending.
-- [completed] Add local persistence, duplication, reset, JSON import/export, and window synchronization — index.html; runtime browser testing pending.
-- [future] Add native Tauri desktop windows with transparency, always-on-top, and window-position controls.
-- [future] Split prototype into typed modules/components and add automated UI tests.
+- [completed] Create initial configuration editor and GUI instance launcher (index.html).
+- [completed] Repair JavaScript parse failure causing blank black page; syntax checked via V8 parser, browser smoke test pending.
+- [in progress] Native browser smoke test of launch, live configuration, and pop-out syncing (requires Windows/browser runtime).
+- [future] Add Tauri desktop window support for true native transparency and always-on-top behavior.

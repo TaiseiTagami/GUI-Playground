@@ -1,8 +1,3 @@
 # Current objective
 
-Ready for design iteration. Initial standalone GUI Playground implementation is complete.
-
-## Next actionable steps
-
-- Run a browser smoke test and manually verify multi-window behavior, pop-up permissions, and visual styling.
-- Decide whether to adopt Tauri for true native translucent and always-on-top windows.
+Verify repaired GUI Playground startup and interactions on Windows. Implement native desktop window launching only after deciding on the runtime.
